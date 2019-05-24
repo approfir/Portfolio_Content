@@ -40,6 +40,7 @@ build:
     -v
   preview_env:
   - PHP_VERSION=7.2
+  - Deploy=1
   publish_env:
   - PHP_VERSION=7.2
   preview_output_directory: _site
