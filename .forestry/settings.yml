@@ -5,8 +5,16 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: directory
+  path: Content
+  label: Projects
+  create: all
+  match: "**/*"
+  templates:
+  - page
+  - post
+- type: directory
   path: content/blog
-  label: Posts
+  label: Presentations
   create: documents
   match: "*"
   new_doc_ext: md
@@ -14,7 +22,7 @@ sections:
   - post
 - type: directory
   path: content
-  label: Pages
+  label: Posters
   create: all
   match: "*"
   new_doc_ext: md
